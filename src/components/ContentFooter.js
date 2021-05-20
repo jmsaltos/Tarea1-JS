@@ -1,6 +1,66 @@
 import React from "react";
 
 export default function ContentFooter() {
+  //Listas con los items para el footer
+  const learn = [
+    "Mac",
+    "iPad",
+    "iPhone",
+    "Watch",
+    "TV",
+    "Music",
+    "AirPods",
+    "iPod",
+    "touch",
+  ];
+  const learnList = learn.map((learn) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {learn}
+    </lu>
+  ));
+  const services = [
+    "Apple Music",
+    "Apple TV+",
+    "Apple Arcade",
+    "iCloud",
+    "Apple One",
+    "Apple Books",
+    "App Store",
+  ];
+  const servicesList = services.map((services) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {services}
+    </lu>
+  ));
+  const account = ["Manage Your Apple ID", "iCloud.com"];
+  const accountList = account.map((account) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {account}
+    </lu>
+  ));
+  const forBussiness = ["Apple and Bussiness"];
+  const forBussinessList = forBussiness.map((forBussiness) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {forBussiness}
+    </lu>
+  ));
+  const appleValues = ["Accesibility", "Environment", "Privacy"];
+  const appleValuesList = appleValues.map((appleValues) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {appleValues}
+    </lu>
+  ));
+  const aboutApple = [
+    "Job Opportunities",
+    "Investors",
+    "Ethics & Compliance",
+    "Events",
+  ];
+  const aboutAppleList = aboutApple.map((aboutApple) => (
+    <lu id="HoverSubrayar" className="HeightFinalList CursorPointer">
+      {aboutApple}
+    </lu>
+  ));
   return (
     <div className="ContentFinal ColorGrisMedio">
       <div className="MargenFinal">
@@ -24,102 +84,41 @@ export default function ContentFooter() {
         </p>
         <hr className="SeparadorFinal"></hr>
       </div>
-      <div className="ContentHorizontal">
-        <div className="ContentFinal2 ">
+      <div className="ContentHorizontal MargenFinal">
+        <div className="ContentFinal2">
           <p>
             <b>Learn</b>
           </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Mac
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            iPad
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            iPhone
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Watch
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            TV
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Music
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            AirPods
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            iPod touch
-          </p>
+          <lu>{learnList}</lu>
         </div>
         <div className="ContentFinal2">
           <p>
-            <b>Servicios</b>
+            <b>Services</b>
           </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Apple Music
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Apple TV+
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            iCloud
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Apple One
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            App Store
-          </p>
-          <p style={{ marginTop: 30 }}>
+          <lu>{servicesList}</lu>
+          <p style={{ marginTop: 10 }}>
             <b>Account</b>
           </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Manage Your Apple ID
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            iCloud.com
-          </p>
+          <lu>{accountList}</lu>
         </div>
         <div className="ContentFinal2">
           <p>
             <b>For Business</b>
           </p>
-          <p id="HoverSubrayar">Apple and Business</p>
+          <lu>{forBussinessList}</lu>
         </div>
         <div className="ContentFinal2">
           <p>
             <b>Apple Values</b>
           </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Accessibility
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Environment
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Privacy
-          </p>
+          <lu>{appleValuesList}</lu>
           <p style={{ marginTop: 30 }}>
             <b>About Apple</b>
           </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Job Opportunities
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Investors
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Ethics & Compliance
-          </p>
-          <p id="HoverSubrayar" className="HeightFinalList CursorPointer">
-            Events
-          </p>
+          <lu>{aboutAppleList}</lu>
         </div>
       </div>
-      <div style={{ width: "50%" }}>
+      <div className="MargenFinal">
         <div className="ContentHorizontal" style={{ marginTop: 30 }}>
           <p
             id="HoverSubrayar"

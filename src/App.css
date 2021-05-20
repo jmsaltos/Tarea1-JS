@@ -32,6 +32,7 @@
   filter: blur(20);
   background-color: rgba(20, 20, 20, 0.85);
   width: 100%;
+  height: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,12 +42,14 @@
 }
 
 .textoMenu{
-  margin: 14px 36px;
+  margin: 14px 40px;
   text-align: justify;
   font-weight: lighter;
   font-family: sans-serif;
   color: white;
   font-size: 14px;
+  display: inline;
+  font-weight: 300;
 }
 
 .Content{
@@ -111,7 +114,8 @@
 }
 
 .HeightFinalList{
-  height: 0px;
+  height: 30px;
+  display: table;
 }
 
 /*Márgenes*/ 
@@ -128,7 +132,7 @@
 
 /* margin: 20px 475px; */
 .MargenFinal{  
-  margin: 0px 475px;
+  width: 60%;
   align-content: left;
 }
 
@@ -170,9 +174,8 @@
 
 .TextoSobreImagen{
   color:white;
-  display: block;
   position: absolute;
-  height: 15%;
+  z-index: -20px -20px;
   justify-content: center;
 }
 
@@ -237,6 +240,13 @@ color: #0356b4;
   width : 100px;
   height : 100px; 
   margin: 15px;
+}
+
+.TamImg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .App-link {

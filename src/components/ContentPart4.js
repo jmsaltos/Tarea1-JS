@@ -21,7 +21,9 @@ export default function ContentPart4() {
           Learn more >
         </p>
         <img
-          style={{ width: 275, height: 350, marginTop: 61, marginBottom: 0 }}
+          //style={{ width: 275, height: 350, marginTop: 61, marginBottom: 0 }}
+          style={{ width: 275, height: 350,  marginTop: 60 , marginBottom: 0}}
+
           src="https://firebasestorage.googleapis.com/v0/b/proyecto-icodetech.appspot.com/o/Iconos%2FiPhone12Pro.png?alt=media&token=1c2f9aa9-b389-4a1b-80d9-ff1234f90e04"
         />
       </div>

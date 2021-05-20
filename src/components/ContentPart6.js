@@ -30,7 +30,7 @@ export default function ContentPart6() {
               fontSize: 18,
               marginTop: -10,
               marginLeft: 15,
-              marginBottom: 80,
+              marginBottom: 100,
             }}
           >
             Try it free²↗
@@ -59,12 +59,12 @@ export default function ContentPart6() {
       </div>
       <div className="Content2Col MargenDerContent2Col CursorPointer">
         <img
-          style={{ width: 930, height: 600 }}
+        className="TamImg"
           src="https://firebasestorage.googleapis.com/v0/b/proyecto-icodetech.appspot.com/o/Iconos%2FAppleTV.png?alt=media&token=4434d7db-3be3-4c09-a6d3-03dd43f56ee2"
         ></img>
         <p
           className="TextoSobreImagen"
-          style={{ fontSize: 39, fontWeight: 400, marginTop: 400 }}
+          style={{ fontSize: 39, fontWeight: 400, marginTop: 400}}
         >
           <img
             style={{ width: 28, height: 28 }}
